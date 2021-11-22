@@ -1,4 +1,4 @@
-const h1 = document.querySelector('.container h1');
+/* const h1 = document.querySelector('.container h1');
 const data = new Date();
 
 function getDiaSemanaTexto(diaSemana){
@@ -33,4 +33,12 @@ function getDiaSemanaTexto(diaSemana){
 
 return diaSemanaTexto;
 }
-h1.innerHTML = getDiaSemanaTexto(data.getDay());
+h1.innerHTML = getDiaSemanaTexto(data.getDay()); */
+
+const h1 = document.querySelector('.container h1');
+const data = new Date();
+const opcoes = {
+    dateStyle: 'full',
+};
+
+h1.innerHTML = data.toLocaleDateString('pt-BR', opcoes);
